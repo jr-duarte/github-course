@@ -1,0 +1,11 @@
+git remote add origin {url do repositório} - para adicionar o repositório remoto
+
+git remote -v  - para verificar quais repositórios estão ligados.
+
+git commit -m ou git commit -am
+
+git push -u origin master - Para enviar para repositório remoto.
+
+---//---
+
+git clone {url do repositório} NomePasta

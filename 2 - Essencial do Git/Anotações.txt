@@ -1,0 +1,56 @@
+//iniciar o repositório do git
+git init
+
+---//----
+
+//File Status Lifecycle
+*Untracked - Acabou de ser criado
+*Unmodified - Foi adicionado (git add)
+*Modified - Foi modificado
+*Staged - Adicionado (git add) após esse etapa ele volta a ser Unmodified
+
+---//---
+
+git status - verificar o status dos arquivos (Untracked/Unmodified.....)
+
+git add - enviar os arquivos para o staged
+
+git commit -m "comentário" - volta os arquivos para o estado unmodified
+
+---//---
+
+git log - verifica às informações dos commits
+
+git log --decorate
+
+git log --author="jr-duarte"
+
+git shortlog
+
+git log --graph
+
+git show {hash do commit}
+
+---//---
+
+git diff - verifica às mudanças que foram feitas antes do commit
+
+git diff --name-only - veridica só os nomes dos arquivos que foram modificados.
+
+---//---
+//Desfazendo coisas
+
+git checkout nomearquivo.txt - As modificações desse arquivo são desfeitas
+
+
+//caso já tenha feito o git add .
+git reset HEAD nomearquivo.txt       //logo após git checkout nomearquivo.txt
+
+
+//caso já tenha feito o commit
+git reset
+--soft - retorna para o staged
+--mixed - retorna para o modified
+--hard - apaga essa alteração por completo
+
+---//---

@@ -1,0 +1,60 @@
+//Arquivos que não quero subir para o github colocar o nome no mesmo desse arquivo
+.gitignore
+
+//ignorar alguma extensão em especifico 
+*.json
+
+----//----
+
+//para guardar alguma modificação temporária
+
+git stash
+
+git stash apply
+
+git stash list
+
+git stash clear
+
+---//--- 
+
+//Alias
+
+git config --global alias.s status
+
+---//---
+
+//Tags - Usadas para criar uma release
+
+//Criar
+git tag -a 1.0.0 -m "Readme Finalizado"
+
+//listar tags
+git tag
+
+//Subir Tag
+git push origin master --tags
+
+---//---
+//Salva vidas
+
+//Usado caso algum commit trouxe algum problema mas será preciso trabalhar nele depois
+git revert {rash do commit}
+
+---//---
+
+//Apagar tags e branches remotos
+
+//apagar tag local
+git tag -d 1.0.1
+
+//apagar tag remota
+git push origin :1.0.1
+
+//apagar branch
+ git push origin :teste
+
+
+
+
+

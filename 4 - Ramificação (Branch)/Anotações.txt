@@ -1,0 +1,20 @@
+//criar branch
+git checkout -b testing
+
+//verificar em qual branch está no momento
+git branch
+
+//mover entre branchs 
+git checkout master
+
+//apagar branch
+git branch -D testing
+
+---//---
+
+//merge 
+git merge {NomeBranch}
+
+
+//rebase
+git rebase {NomeBranch}
